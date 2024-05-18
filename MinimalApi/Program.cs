@@ -3,4 +3,8 @@ var app=builder.Build();
 app.UseHttpsRedirection();
 app.MapGet("/tests", () => "hello world");
 app.MapGet("test2", () => "alican");
+app.MapGet("/get",() => "this is a get request");
+app.MapPost("/post",() => "this is a post request");
+app.MapPut("/put",() => "this is a put request");
+app.MapDelete("/delete",() => "this is a delete request");
 app.Run();
